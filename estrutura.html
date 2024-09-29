@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos do Zodíaco</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Signos do Zodíaco</h1>
+    </header>
+    <section>
+        <div id="main">
+            <p>
+                Entre com sua data de nascimento (dd/mm):
+            </p>
+            <p>
+                <label for="diadn">Dia</label>
+                <input type="number" name="diatxt" id="diatxt">
+                <label for="mesdn">Mês</label>
+                <input type="number" name="mestxt" id="mestxt">
+            </p>
+            <p>
+                <input type="button" value="Buscar" onclick="buscar()">
+            </p>
+        </div>
+        <div id="res">
+            O resultado de sua data aparecerá aqui
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Djalma447</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
