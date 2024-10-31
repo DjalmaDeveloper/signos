@@ -57,9 +57,13 @@ function buscar(){
             res.innerHTML = `<p>Seu signo é Aquário</p>`
             img.setAttribute('src', 'images/11-aquario.png')
         }
+        else if (((dia >= 19 && dia <= 29) && mes == 2) || ((dia >= 1 && dia <= 20) && mes == 3)){
+            res.innerHTML = `<p>Seu signo é Aquário</p>`
+            img.setAttribute('src', 'images/11-aquario.png')
+        }
         else{
-            res.innerHTML = `<p>Seu signo é Peixes</p>`
-            img.setAttribute('src', 'images/12-peixes.png')
+            res.innerHTML = `<p>Data Inválida! Insira um Valor Válido!</p>`
+            //img.setAttribute('src', 'images/12-peixes.png')
         }
     
     }
