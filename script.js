@@ -13,11 +13,11 @@ function buscar(){
         var img = document.createElement('img')
         img.setAttribute('id', 'signo')
         
-        if (((dia >= 21 && dia <= 31) && mes == 3) || ((dia >= 1 && dia <= 20) && mes == 4)){
+        if (((dia >= 21 && dia <= 31) && mes == 3) || ((dia >= 1 && dia <= 19) && mes == 4)){
             res.innerHTML = `<p>Seu signo é Áries</p>`
             img.setAttribute('src', 'images/1-aries.png')
         }
-        else if (((dia >= 21 && dia <= 30) && mes == 4) || ((dia >= 1 && dia <= 20) && mes == 5)){
+        else if (((dia >= 20 && dia <= 30) && mes == 4) || ((dia >= 1 && dia <= 20) && mes == 5)){
             res.innerHTML = `<p>Seu signo é Touro</p>`
             img.setAttribute('src', 'images/2-touro.png')
         }
@@ -49,17 +49,17 @@ function buscar(){
             res.innerHTML = `<p>Seu signo é Sagitário</p>`
             img.setAttribute('src', 'images/9-sagitario.png')
         }
-        else if (((dia >= 22 && dia <= 31) && mes == 12) || ((dia >= 1 && dia <= 20) && mes == 1)){
+        else if (((dia >= 22 && dia <= 31) && mes == 12) || ((dia >= 1 && dia <= 19) && mes == 1)){
             res.innerHTML = `<p>Seu signo é Capricórnio</p`
             img.setAttribute('src', 'images/10-capricornio.png')
         }
-        else if (((dia >= 21 && dia <= 31) && mes == 1) || ((dia >= 1 && dia <= 18) && mes == 2)){
+        else if (((dia >= 20 && dia <= 31) && mes == 1) || ((dia >= 1 && dia <= 18) && mes == 2)){
             res.innerHTML = `<p>Seu signo é Aquário</p>`
             img.setAttribute('src', 'images/11-aquario.png')
         }
         else if (((dia >= 19 && dia <= 29) && mes == 2) || ((dia >= 1 && dia <= 20) && mes == 3)){
-            res.innerHTML = `<p>Seu signo é Aquário</p>`
-            img.setAttribute('src', 'images/11-aquario.png')
+            res.innerHTML = `<p>Seu signo é Peixes</p>`
+            img.setAttribute('src', 'images/12-peixes.png')
         }
         else{
             res.innerHTML = `<p>Data Inválida! Insira um Valor Válido!</p>`
